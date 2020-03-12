@@ -106,7 +106,7 @@ Then, start Gunicorn service and enable it to start on boot time with the follow
     systemctl start gunicorn
     systemctl enable gunicorn
 
-##Configure Nginx to Proxy Pass to Gunicorn
+## Configure Nginx to Proxy Pass to Gunicorn
 
 Create and fill file:
 
