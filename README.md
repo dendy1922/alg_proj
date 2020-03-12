@@ -2,6 +2,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Commands](#commands)
+* [Settings](#settings)
 * [Creating files socket and service files for Gunicorn](#creating-files-socket-and-service-files-for-gunicorn)
 * [Configure Nginx to Proxy Pass to Gunicorn](#configure-nginx-to-proxy-pass-to-gunicorn)
 
@@ -45,14 +46,16 @@ Creating project:
 
     django-admin.py startproject myproject ~/myprojectdir
     
-###For working you need to Create instances in django admin in Algorithm_description:
-    
+##Settings:
+For working you need to Create instances in django admin in Algorithm_description:
+     
      name = Bubble
      name = Merge
      name = Insertion
 
 For adding different algoritms you have to append name of algorithm in model Algorithm_description
 write class with method realize in utils.py  and connect class and name in simple_dict in utils.py
+
 
 ## Creating files socket and service files for Gunicorn
 
