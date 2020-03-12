@@ -14,7 +14,8 @@ class Algorithm_description(models.Model):
                                    verbose_name="Description of algorithm")
 
     big_o_notation = models.CharField(max_length=30,
-                                      verbose_name="Bit O notation")
+                                      verbose_name="Bit O notation",
+                                      blank=True)
 
     class Meta:
         ordering = ('name',)
