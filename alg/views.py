@@ -2,11 +2,14 @@ from django.shortcuts import render
 from .forms import AlgForm
 from .utils import alg_parser
 from django.contrib import messages
-from .models import Algorithm_execution_result, Alg
+from .models import Algorithm_execution_result, Algorithm_description
 
 
 def upload(request):
-
+    """
+    Function for realizing picking algorithm,
+    uploading file, saving resulting model
+    """
     form = AlgForm()
     context = {'form': form, }
 
@@ -27,8 +30,8 @@ def upload(request):
             ins = alg_parser(algorithm)
             new_mas = ins.realize(mas)
 
-            name = Alg.objects.get(name__iexact=algorithm)
-            new_obj = Algorithm_execution_result(name_alg=name,
+            name_alg = Algorithm_description.objects.get(name__iexact=algorithm)
+            new_obj = Algorithm_execution_result(name_alg=name_alg,
                                                  timing=new_mas['timing'],
                                                  input_mas=mas,
                                                  result_mas=new_mas['result'])

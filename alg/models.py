@@ -2,7 +2,10 @@ from django.db import models
 from django.contrib.postgres.fields import ArrayField
 
 
-class Alg(models.Model):
+class Algorithm_description(models.Model):
+    """
+    Model description of algorithm
+    """
     name = models.CharField(max_length=50,
                             verbose_name="Name of algorithm",
                             unique=True)
@@ -21,6 +24,9 @@ class Alg(models.Model):
 
 
 class Algorithm_execution_result(models.Model):
+    """
+    Model of resulting algorithms
+    """
     name_alg = models.ForeignKey(Alg, on_delete=models.CASCADE)
     timing = models.CharField(max_length=50)
     input_mas = ArrayField(models.IntegerField())

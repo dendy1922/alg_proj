@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Alg, Algorithm_execution_result
+from .models import Algorithm_description, Algorithm_execution_result
 
 
-@admin.register(Alg)
+@admin.register(Algorithm_description)
 class AlgAdmin(admin.ModelAdmin):
     list_display = ('name', 'description', 'big_o_notation',)
 
