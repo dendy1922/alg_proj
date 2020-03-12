@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <p><h2>Algorithm: </h2>{{obj.name_alg}}</p>
+        <p><h2>Timing: </h2> {{ obj.timing }}</p>
+        <p><h2>Result: </h2></h2>{{ obj.result_mas}}</p>
+    </div>
+
+
+    <h2><a href="{% url 'upload' %}">Back to upload</a></h2>
+
+{% endblock %}
