@@ -45,8 +45,9 @@ Creating Virtualenv and using:
 Creating project: 
 
     django-admin.py startproject myproject ~/myprojectdir
-    
-##Settings:
+
+## Settings
+
 For working you need to Create instances in django admin in Algorithm_description:
      
      name = Bubble
