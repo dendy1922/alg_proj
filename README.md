@@ -2,8 +2,8 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Commands](#commands)
-* [Creating files socket and service files for Gunicorn](#gunicorn)
-* [Configure Nginx to Proxy Pass to Gunicorn](#nginx)
+* [Creating files socket and service files for Gunicorn](#creating_files_socket_and_service_files_for_gunicorn)
+* [Configure Nginx to Proxy Pass to Gunicorn](#configure_nginx_to_proxy_pass_to_gunicorn)
 
 
 ## General info
